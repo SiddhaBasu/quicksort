@@ -9,15 +9,16 @@ using namespace std;
 
 void printArray(int[], int);
 void quickSort(int[], int*, int*);
+void swap(int*, int*);
 
 int main()
 {
-    int[] arr = { 7, 5, 9, 12, 18, 10, 17, 15, 2, 13 };
+    int arr[] = { 7, 5, 9, 12, 18, 10, 17, 15, 2, 13 };
     int size = sizeof(arr) / sizeof(arr[0]);
     
     printArray(arr, size);
     
-    quickSort(arr, arr, arr + size)
+    quickSort(arr, arr, arr + size);
     
     printArray(arr, size);
 
